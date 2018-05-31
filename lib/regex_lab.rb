@@ -15,5 +15,5 @@ text.scan(/^[A-Z].+[,\.]/) != []
 end
 
 def valid_phone_number?(phone)
-
+phone.scan(\d( |\W)*){10}\b != []
 end
